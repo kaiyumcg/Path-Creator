@@ -1,0 +1,15 @@
+{
+  "name": "com.kaiyum.pathcreator",
+  "author": "Sebastian Lague. Packaged by Md Al Kaiyum (Rumman)",
+  "displayName": "Path Creator",
+  "version": "1.0.0",
+  "unity": "2018.3",
+  "description": "Path creation asset for Unity game development",
+  "category": "Unity",
+  "keywords": [
+    "path",
+    "spline",
+    "bezier",
+    "curve"
+  ]
+}
