@@ -11,9 +11,12 @@
     "bezier",
     "curve"
   ],
-  "author": 
-    {
-        "name": "Md Al Kaiyum (Rumman)",
-        "url": "https://github.com/kaiyumcg"
-    }
+  "dependencies": {
+    "com.kaiyum.unityext": "https://github.com/kaiyumcg/UnityExt.git",
+    "com.kaiyum.editorutil": "https://github.com/kaiyumcg/EditorUtil.git"
+  },
+  "author": {
+    "name": "Md Al Kaiyum",
+    "url": "https://github.com/kaiyumcg"
+  }
 }

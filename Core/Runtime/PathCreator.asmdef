@@ -2,6 +2,7 @@
     "name": "PathCreator",
     "rootNamespace": "",
     "references": [
+        "AttributeExt",
         "UnityExt"
     ],
     "includePlatforms": [],
