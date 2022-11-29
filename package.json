@@ -2,8 +2,9 @@
   "name": "com.kaiyum.pathcreator",
   "displayName": "Path Creator",
   "version": "1.0.0",
-  "unity": "2018.3",
+  "unity": "2020.3.20f1",
   "description": "Path creation asset for Unity game development, original credit: Sebastian Lague",
+  "licence": "MIT",
   "category": "Unity",
   "keywords": [
     "path",
