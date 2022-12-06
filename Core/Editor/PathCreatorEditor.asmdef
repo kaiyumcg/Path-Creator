@@ -3,7 +3,7 @@
     "rootNamespace": "",
     "references": [
         "PathCreator",
-        "EditorUtil"
+        "KEditorUtil"
     ],
     "includePlatforms": [
         "Editor"
