@@ -44,14 +44,14 @@ namespace PathCreation {
         {
             var newinst = new BezierPath
             {
-                points = points.ExShallowCopy(),
+                points = points.ExShallowCopyData(),
                 isClosed = isClosed,
                 space = space,
                 controlMode = controlMode,
                 autoControlLength = autoControlLength,
                 boundsUpToDate = boundsUpToDate,
                 bounds = bounds,
-                perAnchorNormalsAngle = perAnchorNormalsAngle.ExShallowCopy(),
+                perAnchorNormalsAngle = perAnchorNormalsAngle.ExShallowCopyData(),
                 globalNormalsAngle = globalNormalsAngle,
                 flipNormals = flipNormals
             };

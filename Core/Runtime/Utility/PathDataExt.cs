@@ -12,15 +12,15 @@ namespace PathCreation
             var result = new PathData
             {
                 editorData = path.EditorData.Clone() as PathCreatorData,
-                pointsForRoadNormals = path.PointsForRoadNormals.ExShallowCopy(),
-                roadNormals = path.RoadNormals.ExShallowCopy()
+                pointsForRoadNormals = path.PointsForRoadNormals.ExShallowCopyData(),
+                roadNormals = path.RoadNormals.ExShallowCopyData()
             };
             return result;
         }
         public static List<PathData> ConvertToData(this List<PathCreator> paths)
         {
             var result = new List<PathData>();
-            paths.ExForEach((i) =>
+            paths.ExForEachSafe((i) =>
             {
                 result.Add(i.ConvertToData());
             });
@@ -28,7 +28,7 @@ namespace PathCreation
         }
         public static void UpdateTransforms(this List<PathCreator> paths)
         {
-            paths.ExForEach((i) =>
+            paths.ExForEachSafe((i) =>
             {
                 if (i != null && i.EditorData != null && i.EditorData.VertPath != null)
                 {
@@ -39,12 +39,12 @@ namespace PathCreation
         public static void SetDataToPath(this PathData data, PathCreator path)
         {
             path.EditorData = data.editorData;
-            path.PointsForRoadNormals = data.pointsForRoadNormals.ExShallowCopy();
-            path.RoadNormals = data.roadNormals.ExShallowCopy();
+            path.PointsForRoadNormals = data.pointsForRoadNormals.ExShallowCopyData();
+            path.RoadNormals = data.roadNormals.ExShallowCopyData();
         }
         public static void SetDataToPath(this List<PathData> data, List<PathCreator> paths)
         {
-            data.ExForEach((i, index) =>
+            data.ExForEachSafe((i, index) =>
             {
                 i.SetDataToPath(paths[index]);
             });

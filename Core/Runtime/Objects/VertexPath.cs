@@ -53,12 +53,12 @@ namespace PathCreation {
         {
             space = old.space;
             isClosedLoop = old.isClosedLoop;
-            localPoints = old.localPoints.ExShallowCopy();
-            localTangents = old.localTangents.ExShallowCopy();
-            localNormals = old.localNormals.ExShallowCopy();
-            times = old.times.ExShallowCopy();
+            localPoints = old.localPoints.ExShallowCopyData();
+            localTangents = old.localTangents.ExShallowCopyData();
+            localNormals = old.localNormals.ExShallowCopyData();
+            times = old.times.ExShallowCopyData();
             length = old.length;
-            cumulativeLengthAtEachVertex = old.cumulativeLengthAtEachVertex.ExShallowCopy();
+            cumulativeLengthAtEachVertex = old.cumulativeLengthAtEachVertex.ExShallowCopyData();
             bounds = old.bounds;
             up = old.up;
         }
