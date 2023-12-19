@@ -20,7 +20,7 @@ namespace PathCreation
         public static List<PathData> ConvertToData(this List<PathCreator> paths)
         {
             var result = new List<PathData>();
-            paths.ExForEachSafe((i) =>
+            paths.ExForEachSafeCustomClass((i) =>
             {
                 result.Add(i.ConvertToData());
             });
@@ -44,7 +44,7 @@ namespace PathCreation
         }
         public static void SetDataToPath(this List<PathData> data, List<PathCreator> paths)
         {
-            data.ExForEachSafe((i, index) =>
+            data.ExForEachSafeCustomClass((i, index) =>
             {
                 i.SetDataToPath(paths[index]);
             });
